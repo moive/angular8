@@ -14,5 +14,7 @@
         class="btn"
         [disabled] = "statusButton"
         [class.btn-success] = "isActive"
+        (click)="save($event)"
+        (mouseover)="hover()"
     >Test</button>
 </div>

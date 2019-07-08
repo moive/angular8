@@ -13,6 +13,14 @@ export class AppComponent {
     return this.name;
   };
   imageURL = "http://lorempixel.com/400/200";
-  statusButton = true;
+  statusButton = false;
   isActive = true;
+
+  save(e){
+    console.log(e)
+  }
+
+  hover(){
+    console.log('It is hover...!')
+  }
 }
