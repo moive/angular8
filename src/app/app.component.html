@@ -23,3 +23,7 @@
     <input type="text" (keyup.enter) = "onKeyUp(name.value)" #name [(ngModel)]="person.name">
     <p>{{person.name}}</p>
 </div>
+
+<ul>
+    <li *ngFor="let person of people">{{person.name}}</li>
+</ul>

@@ -1,11 +1,20 @@
 import { Component } from '@angular/core';
+import { UserService } from './users.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
+  people : any = [];
+
+  constructor(){
+    let user = new UserService();
+    this.people = user.getUsers();
+  }
+
   message = 'Curso de angular...!';
   name = 'Moises';
 
