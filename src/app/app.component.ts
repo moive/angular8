@@ -4,15 +4,17 @@ import { UserService } from './users.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [
+    UserService
+  ]
 })
 
 export class AppComponent {
   people : any = [];
 
-  constructor(){
-    let user = new UserService();
-    this.people = user.getUsers();
+  constructor(private usersservice: UserService){
+    this.people = usersservice.getUsers()
   }
 
   message = 'Curso de angular...!';
