@@ -10,5 +10,9 @@
     <img [src]="imageURL" alt="">
 </figure>
 <div>
-    <button [disabled] = "statusButton">Test</button>
+    <button
+        class="btn"
+        [disabled] = "statusButton"
+        [class.btn-success] = "isActive"
+    >Test</button>
 </div>

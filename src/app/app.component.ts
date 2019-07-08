@@ -14,4 +14,5 @@ export class AppComponent {
   };
   imageURL = "http://lorempixel.com/400/200";
   statusButton = true;
+  isActive = true;
 }
