@@ -1,3 +1,7 @@
+import { Injectable } from '@angular/core';
+
+
+
 let users = [
     {
         "name":"Luis Salina",
@@ -16,6 +20,9 @@ let users = [
     },
 ];
 
+@Injectable({
+    providedIn:  'root'
+})
 
 export class UserService {
     getUsers(){
