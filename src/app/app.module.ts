@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { from } from 'rxjs';
+import { UserService } from './users.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { from } from 'rxjs';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
