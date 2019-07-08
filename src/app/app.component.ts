@@ -11,5 +11,6 @@ export class AppComponent {
 
   getNombre(){
     return this.name;
-  }
+  };
+  imageURL = "http://lorempixel.com/400/200";
 }
