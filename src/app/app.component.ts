@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  message = 'Curso de angular';
+  message = 'Curso de angular...!';
 }
