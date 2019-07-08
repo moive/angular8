@@ -24,7 +24,7 @@ export class AppComponent {
     console.log('It is hover...!')
   }
 
-  onKeyUp(e){
-    console.log(e.target.value);
+  onKeyUp(userName){
+    console.log(userName);
   }
 }
