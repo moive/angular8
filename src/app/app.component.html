@@ -7,7 +7,7 @@
 <courses></courses>
 <cursos></cursos>
 <figure>
-    <img [src]="imageURL" alt="">
+    <img style="border:2px solid" [style.borderColor] = "isActive ? 'orange' : 'gray'" [src]="imageURL" alt="">
 </figure>
 <div>
     <button
