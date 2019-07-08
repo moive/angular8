@@ -13,4 +13,5 @@ export class AppComponent {
     return this.name;
   };
   imageURL = "http://lorempixel.com/400/200";
+  statusButton = true;
 }
