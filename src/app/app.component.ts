@@ -24,9 +24,7 @@ export class AppComponent {
     console.log('It is hover...!')
   }
 
-  onKeyUp(e){
-    if(e.keyCode === 13){
-      console.log("Enter has been pressed");
-    }
+  onKeyUp(){
+    console.log("Enter has been pressed");
   }
 }
