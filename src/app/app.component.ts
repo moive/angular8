@@ -24,7 +24,7 @@ export class AppComponent {
     console.log('It is hover...!')
   }
 
-  onKeyUp(){
-    console.log("Enter has been pressed");
+  onKeyUp(e){
+    console.log(e.target.value);
   }
 }
