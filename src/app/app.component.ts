@@ -27,4 +27,9 @@ export class AppComponent {
   onKeyUp(userName){
     console.log(userName);
   }
+
+  person = {
+    name: 'Moises',
+    age: 38
+  }
 }
